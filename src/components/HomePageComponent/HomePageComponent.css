@@ -1,0 +1,85 @@
+.HomePage {
+    padding: 20px;
+    max-width: 1200px; /* set a maximum width */
+    margin: auto;
+}
+  
+.Card {
+position: relative;
+display: flex; /* add this */
+justify-content: center; /* add this to center .CardOverlay vertically */
+margin: 10px;
+z-index: 1;
+}
+
+.CardImg {
+width: 50%;
+height: 50%;
+margin: auto;
+padding: 10px;
+}
+
+.CardOverLay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 2; /* add this to set lower z-index */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgba(0, 0, 119, 0.2);
+color: white;
+font-size: 3rem;
+}
+
+.CardOverLay .CardTitle {
+    font-weight: bold;
+    color: azure;
+    font-size: 3rem;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+.CardTitle {
+font-weight: bold;
+color: azure;
+font-size: 3rem;
+}
+
+.CardButton {
+position: relative;
+z-index: 3;
+}
+
+/* media queries for different screen sizes */
+@media (max-width: 768px) {
+.HomePage {
+    padding: 10px;
+}
+
+.CardTitle {
+    font-size: 2rem;
+}
+}
+
+@media (max-width: 576px) {
+.CardTitle {
+    font-size: 1.5rem;
+}
+}
+
+.PhotoLoader-modal-hidden {
+	height: 400px !important;
+	width: 400px !important;
+	margin: 5px;
+}
+
+.PhotoLoader-large {
+	height: 400px;
+	width: 400px;
+	margin: 5px;
+}
